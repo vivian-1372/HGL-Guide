@@ -23,7 +23,7 @@
 <xmp style="display:none; font-family: 'Times New Roman', Times, serif;">
 <br> 
 
-#### Places and "spatial" 
+### Places and "spatial" 
 
 ###### Motivation
 One of the most immediate features of a geospatial dataset is the region it covers. That's why early on in this project, a burning question for me was “what region(s) -- cities, states, countries, continents -- does the Harvard Geospatial Library have data to describe?” 
@@ -33,11 +33,16 @@ To acquire insights into the library's vast collection of geospatial datasets, t
 
 After exploring both formats of metadata, I elected to delve into the JSON GeoBlacklight metadata. Find the .py script to download all metadata fields for the 11,000 datasets as 1 .csv [here](https://github.com/HarvardMapCollection/vn-may-crane-23-docs/blob/main/all-jsons.py). The relevant data field was “dct_spatial_sm”, which describes the spatial/geographical coverage given by a given geospatial dataset. For simplicity, I refer to this field as “spatial”. 
 
-Here are some top locations covered in the Harvard collection:
+##### Exploratory Visualizations
+Using the metadata as is, I plotted the top 10 places covered in the Harvard collection:
 ![top 10](./top_10_n.png)
 
-We see the same Massachusetts and United States prevalence in this alternate view, a wordcloud:
+We see the same Massachusetts, United States, and Boston prevalence in this alternate view, a wordcloud:
 ![worldcloud](./wordcloud.png)
+
+Interestingly, China, Germany, and Australia, in that order, stand out as the dominating countries, while Europe, Africa, South America, and North America, in that order, are the prevailing continents. We can rather easily reason about the prevalence of United States, Massachusetts, and Boston, given the location of the Harvard Geospatial Library, but why not Asia? Why Germany? Questions like this can be expertly answered by HGL's Bonnie Burns, the Head of Geospatial Resources and a key decisionmaker in the collection's development. 
+
+##### Spatial Levels
 
 </xmp>
 </body>
