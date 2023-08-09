@@ -25,8 +25,11 @@
 
 #### Places and "spatial" 
 
-One of the first questions a researcher may pose about a map concerns its coverage -- what location and space does the map describe? 
-That's what the "spatial" data field in the metadata informs us of. 
+##### Motivation
+One of the most immediate features of a geospatial dataset is the region it covers. That’s why early on in this project, a burning question for me was “what region(s) – cities, states, countries, continents – does the Harvard Geospatial Library have data to describe?” 
+
+##### Diving into the Metadata
+Taking a dive into the .json format ![metadata](https://github.com/harvard-library/harvard-geodata), I found that the relevant data field was “dct_spatial_sm”. This field describes the spatial/geographical coverage given by a given geospatial dataset. For simplicity, I refer to this field as “spatial”. 
 
 Here are some top locations covered in the Harvard collection:
 ![top 10](./top_10_n.png)
