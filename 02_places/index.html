@@ -25,10 +25,10 @@
 
 ### Places and "spatial" 
 
-###### Motivation
+##### Motivation
 One of the most immediate features of a geospatial dataset is the region it covers. That's why early on in this project, a burning question for me was “what region(s) -- cities, states, countries, continents -- does the Harvard Geospatial Library have data to describe?” 
 
-###### Diving into the Metadata
+##### Diving into the Metadata
 To acquire insights into the library's vast collection of geospatial datasets, totaling over 11,000 to date, I worked with metadata records documented on the [HGL GitHub account](https://github.com/harvard-library/harvard-geodata/). One of my favorite and earliest conversations with a librarian was with HGL's very own Marc McGee, the Geospatial Metadata Librarian, who specializes in the production of FGDC (Federal Geographic Data Committee)-compliant metadata. He noted that there are two main formats of metadata records that the library keeps -- the robust FGDC format and more accessible JSON GeoBlacklight format, which is derived from the former.  
 
 After exploring both formats of metadata, I elected to delve into the JSON GeoBlacklight metadata. Find the .py script to download all metadata fields for the 11,000 datasets as 1 .csv [here](https://github.com/HarvardMapCollection/vn-may-crane-23-docs/blob/main/all-jsons.py). The relevant data field was “dct_spatial_sm”, which describes the spatial/geographical coverage given by a given geospatial dataset. For simplicity, I refer to this field as “spatial”. 
