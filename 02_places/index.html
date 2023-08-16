@@ -45,7 +45,7 @@ Interestingly, China, Germany, and Australia, in that order, stand out as the do
 ##### Splitting on format
 ![shapefile](top15_shapefile.png)
 ![geotiff](top15_geotiff.png)
-![by format](top15_by_format.png)
+![by format](top_by_format.png)
 
 ##### Spatial Levels
 After the initial passthrough the metadata, I wanted to dive deeper into the "spatial" field. As shown in the exploratory data visualizations, the metadata records were counting "Boston", "Massachusetts", and "United States" differently so that out of three datasets with those "spatial" descriptions, only one would contribute to the "United States" count. I used Google's geocoder API to flesh out the "spatial" field so that every dataset would have information about the town/city, state, country, and continent if possible. The documentation for this feature engineering can be found [here](https://github.com/HarvardMapCollection/vn-may-crane-23-docs/blob/main/spatial_levels.py).
